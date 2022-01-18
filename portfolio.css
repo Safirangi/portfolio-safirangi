@@ -11,7 +11,7 @@ body {
   display: inline-flex;
   justify-content: flex-end;
   position: fixed;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.9);
   top: 0;
   width: 100%;
   background: #000;
@@ -40,10 +40,10 @@ body {
     display: flex;
     justify-content: center;
     position: fixed;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
     top: 0;
     width: 100%;
-    background: #03071e;
+    background: #000;
   }
   .navbar ul li {
     display: inline-flex;
@@ -65,6 +65,7 @@ body {
   text-align: center;
   margin: 50vh 2em 0;
   font-size: 2em;
+  text-shadow: 0 3px 5px #000;
 }
 .welcome-section p {
   color: #fffcf2;
@@ -76,11 +77,11 @@ body {
 }
 @media (max-width: 400px) {
   .welcome-section h1 {
-    color: #ccc5b9;
+    color: #a5f347;
     font-family: "PT Mono", monospace;
     text-align: center;
-    padding: 0em 2em;
-    margin: 50vh 0;
+    padding: 0 0;
+    margin: 20vh 0 0;
     font-size: 1.2em;
   }
   .welcome-section p {
@@ -88,9 +89,15 @@ body {
     font-family: "PT Mono", monospace;
     text-align: center;
     width: 30em;
-    margin: 25vh 0;
-    font-size: 1.2em;
-    padding: 4em;
+    margin: 20vh 0 0;
+    font-size: 1.1em;
+    padding: 0;
+  }
+  .welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 .project-grid {
@@ -107,16 +114,17 @@ body {
   font-family: "PT Mono", monospace;
   text-align: center;
   margin: 0 auto 2.5em;
+  text-shadow: 0 3px 5px #000;
 }
 .project-tile {
   height: 20em;
   width: 20em;
   background: #000;
   border-radius: 0.2em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .project-tile:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.9);
   border-bottom: 2px solid #86c232;
 }
 .project-tile a {
@@ -159,11 +167,11 @@ body {
   width: 10em;
   margin: 1em auto;
   text-decoration: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   border-radius: 0.2em;
 }
 .projects .codepen-link:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
   border-bottom: 2px solid #86c232;
 }
 @media (max-width: 400px) {
@@ -176,7 +184,7 @@ body {
     padding: 1em 0 1em;
   }
   .projects h1 {
-    padding: 6em 0 0 0;
+    padding: 4em 0 0 0;
   }
   .projects .codepen-link {
     display: flex;
@@ -192,6 +200,7 @@ body {
   font-family: "PT Mono", monospace;
   text-align: center;
   margin: 0 auto 1em;
+  text-shadow: 0 3px 5px #000;
 }
 #contact {
   display: flex;
@@ -220,6 +229,7 @@ body {
   transition: transform 0.3s ease-out;
   font-family: "PT Mono", monospace;
   padding: 1em 2em;
+  text-shadow: 0 12px 8px #000;
 }
 .contact-details:hover {
   transform: translateY(8px);
@@ -231,9 +241,20 @@ footer {
   bottom: 0;
   position: relative;
 }
+@media (max-width: 400px) {
+  .footer {
+    width: 100vw;
+    height: 20vh;
+    background: #000;
+    bottom: 0;
+    position: relative;
+    overflow-x: hidden;
+  }
+}
 .copyright {
   color: #fff;
   font-family: "PT Mono", monospace;
   text-align: center;
   padding: 2em;
+  text-shadow: 0 1px 2px #222629;
 }
