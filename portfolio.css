@@ -258,3 +258,15 @@ footer {
   padding: 2em;
   text-shadow: 0 1px 2px #222629;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #222629;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #86c232;
+  border-radius: 25px;
+}
+
