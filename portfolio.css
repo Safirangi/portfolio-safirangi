@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   background: #222629;
@@ -51,6 +52,26 @@ body {
     list-style: none;
   }
 }
+@media (max-width: 800px) {
+  * {
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);
+    top: 0;
+    width: 100%;
+    background: #000;
+  }
+  .navbar ul li {
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+  }
+}
+
 
 .welcome-section {
   height: 100vh;
@@ -192,6 +213,25 @@ body {
     margin: 250vh auto 0;
   }
 }
+@media (max-width: 800px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    gap: 3em 1em;
+    padding: 1em 0 1em;
+  }
+  .projects h1 {
+    padding: 4em 0 0 0;
+  }
+  .projects .codepen-link {
+    display: flex;
+    align-items: flex-end;
+    margin: 75vh auto 0;
+  }
+}
+
 #contact {
   height: 100vh;
 }
